@@ -1,0 +1,69 @@
+%ubuntu-bold{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+%noto-title{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+%poppins-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.skills{
+	margin-left: 250px;
+	&__inner{
+		margin-left: 108px;
+		margin-top: 260px;
+	}
+	&__logo{
+		margin-bottom: 30px;
+	}
+	&__title{
+		@extend %noto-title;
+		font-size: 36px;
+		line-height: 38px;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+	&__items{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	&__item{
+		max-width: 225px;
+		margin-right: 105px;
+	}
+	&__item-title{
+		@extend %noto-title;
+		font-size: 27px;
+		line-height: 29px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	&__item-descr{
+		font-size: 14px;
+		line-height: 21px;
+		@extend %poppins-text;
+		margin-bottom: 75px;
+	}
+	&__item-subtitle{
+		font-size: 16px;
+		line-height: 17px;
+		text-transform: uppercase;
+		color: #2B5428;
+		@extend %noto-title;
+		margin-bottom: 12px;
+	}
+	&__item-text{
+		font-size: 16px;
+		line-height: 24px;
+		color: #504F4F;
+		margin-bottom: 65px;
+		@extend %poppins-text;
+	}
+}

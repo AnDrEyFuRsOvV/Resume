@@ -1,0 +1,50 @@
+%ubuntu-bold{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+%noto-title{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+%poppins-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.header{
+	position: absolute;
+	top: 50px;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	
+	&__logo{
+		padding-left: 150px;
+	}
+	&__nav{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__menu{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__menu-li{
+		@extend %ubuntu-bold;
+		padding-right: 45px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	&__menu-link{
+		text-decoration: none;
+		color: #000000;
+		transition: all .3s;
+		&:hover{
+			background-color: #c9b2a2;
+			padding: 10px;
+			border-radius: 20px;
+		}
+	}
+}
